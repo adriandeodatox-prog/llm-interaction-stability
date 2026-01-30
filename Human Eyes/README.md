@@ -176,3 +176,30 @@ It reflects human intent, constraints, and judgment, with the LLM acting as an e
 
 **Suggested authorship format:**
 
+This framing emphasizes co-creation, transparency, and responsibility.
+
+### Scope
+
+Human Eyes is intentionally scoped as:
+
+- A conversation-level interaction protocol  
+- A demonstration artifact, not a production claim  
+- A design pattern that can be implemented, adapted, or discarded  
+- A recruiter-facing signal of alignment thinking, not a commercial product  
+
+It is not presented as a universal solution, a replacement for evaluation, or a claim of superiority over other approaches.
+
+---
+
+## Tone & Intent
+
+The intent of Human Eyes is constructive, cautious, and human-centered.
+
+- It does not assume misuse or incompetence  
+- It avoids moral framing or adversarial positioning  
+- It treats both users and systems as collaborators in meaning-making  
+
+The protocol exists to reduce friction, not to prescribe behavior.
+
+
+
