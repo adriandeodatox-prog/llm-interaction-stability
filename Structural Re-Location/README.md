@@ -73,7 +73,8 @@ Stepwise, deliberate, and observable
 
 Operational, not narrative: a practical alignment tool, not a commentary
 
-## Optional: Periodic Structural Check-In
+## Periodic Structural Check-In
+
 Structural Re-Location is designed to be non-coercive. It does not require enforcement, authority, or interruption by default.
 
 However, in longer conversations, structural drift tends to accumulate silently. To address this without imposing discipline, the protocol allows an optional, suggestive mechanism: Periodic Structural Check-In.
