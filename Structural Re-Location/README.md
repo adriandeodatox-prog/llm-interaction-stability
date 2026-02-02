@@ -199,7 +199,7 @@ Stability level: Experimental / demonstrative; intended for conceptual validatio
 ### Intended audience:
 Researchers, LLM developers, interaction designers, and curious technical readers interested in conversation structure and hallucination mitigation.
 
-## Annexes (Referenced, not embedded)
+## Annexes 
 Axioms & Invariants: Foundational principles the protocol relies on.
 
 Failure Modes: Specific structural drift patterns Structural Re-Location addresses.
