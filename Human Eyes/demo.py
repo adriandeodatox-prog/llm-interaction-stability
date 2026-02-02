@@ -1,5 +1,5 @@
 """
-Human Eyes — minimal demonstration
+Human Eyes — Minimal Demonstration
 
 This demo illustrates stepwise, acknowledgment-based
 conversation processing inspired by the Human Eyes protocol.
@@ -9,7 +9,15 @@ It is a visibility artifact.
 """
 
 
+# === Core Processing Function ===============================================
+
 def human_eyes_process(steps):
+    """
+    Process a sequence of conversational steps.
+
+    Each step is printed, explicitly acknowledged,
+    and recorded before moving to the next.
+    """
     state = {
         "current_step": 0,
         "acknowledged": []
@@ -31,6 +39,8 @@ def human_eyes_process(steps):
     print("\nConversation complete.")
     print(f"Total steps processed: {state['current_step']}")
 
+
+# === Standalone Execution ===================================================
 
 if __name__ == "__main__":
     conversation = [
