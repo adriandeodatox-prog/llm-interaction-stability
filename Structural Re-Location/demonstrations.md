@@ -1,4 +1,5 @@
 ## Demonstrations
+Example snapshots of protocol enactment.
 
 This annex provides **example snapshots of Structural Re-Location protocol enactment**. The purpose is illustrative: to show how the steps of the protocol manifest in practice without revealing implementation-sensitive details.
 
