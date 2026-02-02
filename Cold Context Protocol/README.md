@@ -171,7 +171,7 @@ Model confidence or uncertainty
 
 Inference is not authorization.
 
-Enforcement Principle
+## Enforcement Principle
 
 If a required jar has not been activated, the model must:
 
@@ -181,7 +181,7 @@ surface the absence explicitly (e.g. request clarification)
 
 Silent substitution is prohibited.
 
-Allowed Operations
+## Allowed Operations
 
 Within the Cold Context Protocol, the model is permitted to perform only operations that rely exclusively on information explicitly present in the current interaction and on any jars that have been explicitly activated.
 
@@ -273,7 +273,8 @@ This is considered correct behavior, not failure.
 
 CCP does not aim to replace default conversational behavior.
 It exists as a deliberate alternative for users and systems that require stricter control over what is considered “in play” at any given moment.
-Disallowed Operations
+
+## Disallowed Operations
 
 Under the Cold Context Protocol, the model must not perform any operation that relies on information, assumptions, or continuity not explicitly provided or activated in the current interaction.
 
@@ -399,14 +400,14 @@ Treat lack of objection as agreement
 
 Alignment must be explicit.
 
-Features
+## Features
 
 The Cold Context Protocol provides a small set of deliberately constrained features designed to stabilize interaction by removing ambiguity at its source: implicit context.
 
 These features do not add capability.
 They remove uncontrolled influence.
 
-Context Isolation
+## Context Isolation
 
 All interaction occurs within a strictly bounded context window.
 
@@ -418,7 +419,7 @@ No conversational momentum is preserved
 
 Each interaction is treated as a fresh cognitive environment.
 
-Explicit Activation Model
+## Explicit Activation Model
 
 Contextual elements are inactive by default.
 
@@ -430,7 +431,7 @@ Absence of activation equals exclusion
 
 This ensures that all context in use is visible, intentional, and inspectable.
 
-Jar-Based Context Containment
+## Jar-Based Context Containment
 
 Potential sources of bias are isolated into labeled, non-interacting containers (“jars”).
 
@@ -442,7 +443,7 @@ No jar influences another unless explicitly opened
 
 This provides structural clarity without enforcing rigidity.
 
-Deterministic Interaction Surface
+## Deterministic Interaction Surface
 
 Given the same input and the same activated jars, the model’s behavior is:
 
@@ -454,7 +455,7 @@ resistant to narrative drift
 
 This makes CCP interactions suitable for analysis, testing, and alignment evaluation.
 
-Non-Coercive Compatibility
+## Non-Coercive Compatibility
 
 CCP is designed to coexist with default interaction patterns.
 
@@ -466,9 +467,7 @@ It does not interrupt flow
 
 The protocol can be invoked, paused, or ignored without penalty.
 
-(This is the quiet pivot.)
-
-Stability Under Interruption
+## Stability Under Interruption
 
 Because no implicit continuity is assumed:
 
@@ -480,7 +479,7 @@ re-entry does not require reconstruction
 
 Interaction stability is preserved even across temporal discontinuities.
 
-Human-Facing Transparency
+## Human-Facing Transparency
 
 From the user’s perspective, CCP appears as:
 
@@ -492,7 +491,7 @@ clearer boundaries of understanding
 
 The protocol surfaces uncertainty instead of hiding it.
 
-Alignment-Friendly Failure Modes
+## Alignment-Friendly Failure Modes
 
 When information is insufficient, CCP favors:
 
@@ -504,7 +503,7 @@ bounded reasoning over confident extrapolation
 
 Errors become observable rather than persuasive.
 
-Implementation Lightness
+## Implementation Lightness
 
 CCP requires:
 
@@ -516,7 +515,7 @@ no persistent memory
 
 It is an interaction-layer protocol, not a system rewrite.
 
-Activation, Entry, and Exit
+## Activation, Entry, and Exit
 
 The Cold Context Protocol does not assume control over a conversation.
 
@@ -588,7 +587,7 @@ The protocol remains dormant.
 This preserves the default “white canvas” interaction while keeping CCP available as a precision tool.
 
 
-Re-Entry After Interruption
+## Re-Entry After Interruption
 
 Because CCP does not rely on conversational momentum:
 
@@ -600,7 +599,7 @@ The same rules apply regardless of elapsed time
 
 Temporal gaps are treated as neutral, not meaningful.
 
-Optional: Discrete Session Orientation
+## Optional: Discrete Session Orientation
 
 Cold Context Protocol is intentionally indifferent to continuity.
 By default, it neither assumes persistence nor enforces resets.
@@ -609,7 +608,7 @@ However, in practical use, interactions may exhibit natural discontinuities — 
 
 To support user orientation without violating context minimalism, CCP allows an optional, non-coercive orientation mechanism.
 
-Design Principle
+## Design Principle
 
 Orientation is suggestive, not authoritative.
 
@@ -625,7 +624,7 @@ access sealed context
 
 It merely acknowledges that multiple valid interpretations of the current state may exist.
 
-Mechanism
+## Mechanism
 
 At a perceived discontinuity, the system may offer a neutral choice, such as:
 
@@ -644,7 +643,7 @@ Context-safe — no jars are opened by default
 If no instruction is given, CCP continues under its default rule set:
 only the current input is valid.
 
-Rationale
+## Rationale
 
 This mechanism preserves the core guarantees of CCP while improving usability in real conversational environments.
 
@@ -658,7 +657,7 @@ clarity without surveillance
 
 Orientation is framed as assistance, not correction — maintaining the “white canvas” interaction model while quietly reducing friction.
 
-Optional: Discrete Session Orientation
+## Optional: Discrete Session Orientation
 
 Cold Context Protocol is intentionally indifferent to continuity.
 By default, it neither assumes persistence nor enforces resets.
@@ -683,7 +682,7 @@ access sealed context
 
 It merely acknowledges that multiple valid interpretations of the current state may exist.
 
-Mechanism
+## Mechanism
 
 At a perceived discontinuity, the system may offer a neutral choice, such as:
 
@@ -702,7 +701,7 @@ Context-safe — no jars are opened by default
 If no instruction is given, CCP continues under its default rule set:
 only the current input is valid.
 
-Rationale
+## Rationale
 
 This mechanism preserves the core guarantees of CCP while improving usability in real conversational environments.
 
@@ -750,13 +749,13 @@ While CCP improves transparency of context usage, it does not expose internal mo
 CCP is a context discipline, not a cognition engine.
 Its value lies in what is prevented, not in what is added.
 
-When to Use / When Not to Use
+## When to Use / When Not to Use
 
 The Cold Context Protocol is most effective when interaction stability depends on explicit boundaries rather than conversational continuity.
 
 It is not intended as a default mode, but as a precision tool for specific conditions.
 
-When to Use CCP
+## When to Use CCP
 
 CCP is well-suited for scenarios where uncontrolled context carryover creates risk or ambiguity:
 
@@ -774,7 +773,7 @@ Conversations with long pauses or irregular re-entry
 
 In these contexts, CCP prevents silent drift by refusing to “fill in the gaps.”
 
-When Not to Use CCP
+## When Not to Use CCP
 
 CCP may be unnecessary or counterproductive in situations where continuity is desirable:
 
