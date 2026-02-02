@@ -1,4 +1,6 @@
-Cold Context Protocol — Axioms
+# Cold Context Protocol — Axioms
+
+## Axioms
 
 1. Only the present text exists.
 2. No prior context is accessible.
