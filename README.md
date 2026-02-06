@@ -1,33 +1,36 @@
 # LLM Interaction Stability Toolkit
 
-A collection of opt-in interaction protocols designed to reduce ambiguity,
-context drift, and hallucination in long-running LLM conversations.
+A collection of opt-in interaction protocols designed to reduce ambiguity, context drift, and hallucination in long-running LLM conversations.
 
-This repository focuses on **interaction design**, not model training,
-fine-tuning, or system-level interventions.
+This repository focuses on interaction design, not model training, fine-tuning, or system-level interventions.
+
+All protocols operate entirely at the human–LLM interface layer and can be used independently or selectively.
 
 ---
 
 ## What this is
 
-- Prompt-level interaction protocols
-- Human-triggered safeguards for clarity
-- Conversation structure patterns
-- Non-invasive and reversible by design
-- Compatible with any GPT-style interface
+- Prompt-level interaction protocols  
+- Human-triggered safeguards for clarity  
+- Conversation structure patterns  
+- Non-invasive and reversible by design  
+- Compatible with any GPT-style interface  
 
-These artifacts explore how **better conversation structure**
-can reduce failure modes commonly attributed to “hallucination”.
+These artifacts explore how better conversation structure can reduce failure modes commonly attributed to “hallucination.”
 
 ---
 
 ## What this is not
 
-- Model fine-tuning or weight modification
-- Hidden system prompts or coercive control
-- Psychological manipulation
-- Metaphysical, spiritual, or ideological frameworks
-- A replacement for existing safety systems
+- Model fine-tuning or weight modification  
+- Hidden system prompts or coercive control  
+- Persistent hidden state  
+- Psychological manipulation  
+- Metaphysical, spiritual, or ideological frameworks  
+- A replacement for existing safety systems  
+
+This toolkit does not attempt to “fix” the model.  
+It changes how humans interact with it.
 
 ---
 
@@ -36,91 +39,24 @@ can reduce failure modes commonly attributed to “hallucination”.
 Most LLM hallucinations are not random.
 
 They tend to emerge from:
-- Ambiguous human intent
-- Long context accumulation without checkpoints
-- Unacknowledged topic or mode shifts
-- Cognitive overload in extended conversations
 
-This toolkit proposes **structural interaction fixes**
-that operate entirely at the human–AI interface layer.
+- Ambiguous human intent  
+- Long context accumulation without checkpoints  
+- Unacknowledged topic or mode shifts  
+- Premature conclusions during exploratory reasoning  
+
+This toolkit proposes structural interaction fixes that reduce these failure modes without constraining creativity or agency.
 
 ---
 
 ## Design principles
 
-- **Clarity over fluency**
-- **Stability over persuasion**
-- **Explicit structure over implicit assumptions**
-- **User agency over system enforcement**
-- **Reversibility over commitment**
+All protocols in this repository share the following principles:
 
-All protocols are optional and discardable at any time.
+- **Non-coercive by default**  
+  Nothing is enforced automatically. The user always chooses when a protocol applies.
 
----
+- **Explicit over implicit**  
+  Structure is surfaced, not hidden.
 
-## Included protocols
-
-### Human Eyes
-Stepwise, line-by-line processing to reduce misinterpretation
-of dense or multi-part inputs.
-
----
-
-### Ask-for-Clarification Protocol
-An ambiguity choke that prevents the model from guessing intent
-when human input is underspecified.
-
-Instead of proceeding with high uncertainty, the system asks:
-> “Do you mean A, B, or something else?”
-
----
-
-### Tree Vision Protocol
-A structural analysis tool that treats ideas as evolving systems
-rather than flat text.
-
-Focuses on assumptions, core claims, and downstream implications.
-
----
-
-## Scope and limitations
-
-This repository intentionally excludes:
-- HUD-based systems
-- Mandatory status reporting
-- Persistent hidden state
-- Forced alignment mechanisms
-
-Those concepts are explored separately as higher-invasiveness research.
-
----
-
-## Who this is for
-
-- LLM engineers
-- Product designers working with conversational AI
-- Alignment and safety researchers
-- Developers interested in human–AI interaction patterns
-
----
-
-## Status
-
-Active, evolving collection of interaction artifacts.  
-Designed to be read, tested, and adapted — not blindly adopted.
-
----
-
-## Authorship
-
-Concepts, structure, and protocol design by **Adrian Deodato**.  
-Text iteration and refinement performed with the assistance of large language models,
-used strictly as collaborative tools.
-
-Responsibility for framing, scope, and claims remains human-authored.
-
----
-
-## License
-
-MIT
+- **Reversibl**
