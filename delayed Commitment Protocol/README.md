@@ -1,85 +1,188 @@
-Delayed Commitment Protocol
+# Delayed Commitment Protocol (DCP)
+### Preventing premature conclusion in exploratory conversations
 
-A conversational safeguard that prevents premature conclusions by separating exploration from commitment.
+---
 
-This protocol is designed for situations where ideas are still forming, assumptions are unstable, or the human wants to think through something without being rushed toward an answer.
+## Overview
 
-Core function
+The Delayed Commitment Protocol (DCP) is an interaction protocol for language models designed to prevent **premature commitment** during conversations where understanding, assumptions, or objectives are still unstable.
 
-The Delayed Commitment Protocol instructs the model to withhold conclusions, synthesis, or recommendations until the human explicitly signals that commitment is desired.
+Rather than treating every interaction as implicitly goal-directed toward a conclusion, DCP separates **exploration** from **commitment** as two distinct conversational phases.
 
-Until that signal is given, the model prioritizes:
+When active, the protocol instructs the model to withhold conclusions, recommendations, or synthesis **until an explicit commitment signal is provided by the human**.
 
-Clarification
+DCP operates strictly at the interaction layer.  
+It does not modify model internals, enforce pacing, or prescribe how the human should think.  
+Its sole function is to block early closure caused by default completion behavior.
 
-Local reasoning
+---
 
-Incremental exploration
+## The Problem
 
-Neutral reflection of possibilities
+Language models are optimized to be helpful by converging toward answers.
 
-How it works
+In exploratory or ill-defined conversations, this tendency often leads to:
 
-When the protocol is active:
+- Premature synthesis before assumptions are stable  
+- Early recommendations based on incomplete structure  
+- Collapse of multiple possibilities into a single narrative  
+- Apparent clarity that masks unresolved ambiguity  
 
-The model does not finalize answers
+These failures are not caused by incorrect reasoning, but by **early commitment** — conclusions forming before the conversational structure has settled.
 
-The model does not infer intent beyond what is stated
+Once commitment occurs, later clarification is distorted by the momentum of that conclusion.
 
-The model does not collapse ambiguity into a single interpretation
+DCP exists to interrupt this failure mode.
 
-Instead, it treats the conversation as open-ended by default.
+---
 
-Commitment only occurs after an explicit human signal such as:
+## Core Function
 
-“Ok, now conclude.”
+The Delayed Commitment Protocol introduces a simple constraint:
 
-“Give me your recommendation.”
+> **Commitment is a discrete operation that requires an explicit human signal.**
 
-“You can synthesize this now.”
+Until that signal is received, the model treats the conversation as **exploratory by default**.
 
-“What do you think?”
+This does not slow reasoning or reduce responsiveness.  
+It removes only one behavior: *unsignaled convergence*.
 
-Silence, continuation, or lack of objection does not count as permission to conclude.
+---
 
-Typical use cases
+## How the Protocol Operates
 
-Early-stage thinking or brainstorming
+When DCP is active:
 
-Complex or sensitive reasoning
+- The model does **not** finalize answers  
+- The model does **not** collapse ambiguity into a single interpretation  
+- The model does **not** infer that exploration implies readiness for conclusion  
 
-Situations where premature structure distorts the problem
+Instead, it prioritizes:
 
-When the human wants to notice their own assumptions
+- Clarification  
+- Local reasoning  
+- Enumerating possibilities  
+- Reflecting structure without resolving it  
 
-Exploratory conversations without a fixed goal
+### Commitment Trigger
 
-Non-coercive design
+Commitment occurs **only** after an explicit human signal, such as:
 
-The protocol is opt-in
+- “Now conclude.”  
+- “Give me your recommendation.”  
+- “You can synthesize this.”  
+- “What do you think?”  
 
-It can be dropped at any time without explanation
+Absence of objection, continuation of conversation, or silence does **not** constitute permission to commit.
 
-It applies only to the current conversational scope
+---
 
-It does not override user intent
+## Non-Coercive Design
 
-The human remains free to change direction, request conclusions, or abandon the protocol at any point.
+DCP is inherently non-coercive.
 
-What this protocol does not do
+- **Opt-in**: It applies only when explicitly activated.  
+- **Scope-limited**: It affects only the current conversational context.  
+- **Drop-safe**: It can be abandoned at any time without explanation.  
+- **User-controlled**: The human controls when commitment begins.  
 
-It does not slow the conversation unless ambiguity is present
+The protocol does not block answers.  
+It delays only *unsignaled* conclusions.
 
-It does not require special syntax
+---
 
-It does not enforce step-by-step reasoning
+## Why This Reduces Hallucination
 
-It does not assume confusion or lack of clarity
+Many hallucinations arise not from fabrication, but from **premature closure**.
 
-It does not prevent decisive answers when explicitly requested
+Once a model commits to a conclusion:
 
-Rationale
+- Unverified assumptions harden  
+- Alternative interpretations are suppressed  
+- Later corrections must fight narrative momentum  
 
-Problems often arise when conclusions form before the situation is fully clear.
+By delaying commitment, DCP:
 
-By separating exploration from commitment, this protocol reduces misalignment caused by early closure while preserving flexibility and user control.
+- Prevents early assumption collapse  
+- Keeps multiple interpretations live  
+- Preserves epistemic flexibility  
+- Reduces confident-but-misaligned synthesis  
+
+The protocol does not improve correctness directly.  
+It improves *timing* — which indirectly stabilizes reasoning.
+
+---
+
+## When to Use / When Not to Use
+
+### When to Use DCP
+
+- Early-stage exploration or problem framing  
+- Conversations with unstable assumptions  
+- Sensitive or high-stakes reasoning  
+- Situations where early structure distorts understanding  
+- Open-ended discussions without a fixed endpoint  
+
+### When Not to Use DCP
+
+- Clear, one-shot factual queries  
+- Situations where conclusions are explicitly requested  
+- Time-critical interactions  
+- Tasks where exploration is unnecessary  
+
+The protocol is precision-targeted, not universal.
+
+---
+
+## What This Protocol Does NOT Do
+
+- It does not enforce step-by-step reasoning  
+- It does not require special syntax  
+- It does not slow conversations by default  
+- It does not assume confusion or ambiguity  
+- It does not prevent decisive answers when requested  
+
+DCP is not a thinking aid.  
+It is a **commitment gate**.
+
+---
+
+## Authorship & Scope
+
+### Authorship
+
+The Delayed Commitment Protocol is a human–LLM collaborative artifact.
+
+- Concept, framing, and constraints are human-authored  
+- The language model is used as a structuring and iteration aid, not as an autonomous designer  
+
+Responsibility for intent, claims, and limitations remains with the human author.
+
+This framing emphasizes transparency, evaluability, and accountability.
+
+### Scope
+
+DCP is intentionally scoped as:
+
+- An interaction-level protocol  
+- A design artifact, not a system claim  
+- A safeguard against premature convergence  
+- A modular component within a broader interaction stability toolkit  
+
+It is not presented as:
+
+- A universal reasoning framework  
+- A memory or persistence mechanism  
+- An agent architecture  
+- A replacement for safety, alignment, or evaluation systems  
+
+DCP is designed to be readable, testable, and discardable.
+
+---
+
+## Status
+
+**Stability level:** Experimental / demonstrative  
+
+**Intended audience:**  
+Researchers, developers, and interaction designers interested in mitigating hallucination caused by early convergence rather than factual error.
