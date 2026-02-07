@@ -1,5 +1,6 @@
 # Combined Protocols — Plausible Hallucination Reduction Diagram (with Estimates)
 
+```text
 [Input Step n]
       |
       v
@@ -62,7 +63,6 @@
 - Explicitly visible assumptions and structure
 - Controlled conclusions only when authorized
 
----
 
 ### Legend / Notes:
 - **Estimated reduction** percentages reflect cumulative effect but are not additive due to overlapping functions.
