@@ -50,7 +50,7 @@
       |
       v
 [Integrated Reasoning Layer]
-- Cumulative hallucination reduction ~ −80%*
+- **Cumulative hallucination reduction** ~ −80%*
 - Overlapping safeguards reduce silent assumptions
 - Explicit surfacing of ambiguity
 - Stepwise, structured reasoning
@@ -62,12 +62,3 @@
 - Aligned human–LLM reasoning
 - Explicitly visible assumptions and structure
 - Controlled conclusions only when authorized
-
-
-### Legend / Notes:
-- **Estimated reduction** percentages reflect cumulative effect but are not additive due to overlapping functions.
-- **CCP**: Prevents context smearing by isolating current input.
-- **Human Eyes**: Limits leaps in reasoning by requiring incremental processing.
-- **Structural Re-Location**: Maintains a shared mental map of the conversation, preventing drift.
-- **CAP**: Forces ambiguity to surface before proceeding.
-- **DCP**: Withholds conclusions until explicitly requested, preventing premature commitment.
