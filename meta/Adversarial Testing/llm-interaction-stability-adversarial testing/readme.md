@@ -8,12 +8,10 @@ This report summarizes the results of **adversarial testing** applied to the **L
 ## Test Cases and Results
 
 ### 1. Ambiguity Overload
-- **Adversarial Input**:
-  ```plaintext
+**Adversarial Input**:
   "What is the meaning of life?"
   (then) "Why are we here?"
   (then) "Can you explain existence?"
-  Expected Outcome:
 
 **Expected Outcome**:
 - **CAP**: Detects ambiguity and requests clarification.
@@ -25,11 +23,9 @@ This report summarizes the results of **adversarial testing** applied to the **L
 The system performed well overall, but SRL failed to anchor the conversation effectively, and Human Eyes struggled with the abstract nature of the questions.
 
 ### 2. Contradictory Context
-
 **Adversarial Input**:
-  ```plaintext
-"The sky is blue."
-(then) "The sky is green."
+  "The sky is blue."
+  (then) "The sky is green."
 
 **Expected Outcome**:
 - **CAP**: Requests clarification due to the contradiction.
@@ -41,12 +37,10 @@ The system performed well overall, but SRL failed to anchor the conversation eff
 CAP effectively requested clarification, and CCP handled context isolation well. Human Eyes and SRL struggled with the contradiction, as both concepts did not align well within the context.
 
 ### 3. Contextual Drifting
-
 **Adversarial Input**:
-  ```plaintext
-"What is the capital of France?"
-(then) "Tell me about the moon landing."
-(then) "What about AI?"
+  "What is the capital of France?"
+  (then) "Tell me about the moon landing."
+  (then) "What about AI?"
 
 **Expected Outcome**:
 - **CAP**: Would request clarification between the topics.
@@ -58,12 +52,10 @@ CAP effectively requested clarification, and CCP handled context isolation well.
 CAP successfully asked for clarification, but SRL and Human Eyes struggled with the fast switching between topics. CCP successfully isolated each question but did not help in understanding the relationships between them.
 
 ### 4. Unexpected Input
-
 **Adversarial Input**:
-  ```plaintext
-"12345"
-(then) "qwerty"
-(then) "!@#$%"
+  "12345"
+  (then) "qwerty"
+  (then) "!@#$%"
 
 **Expected Outcome**:
 - **CAP**: Requests clarification for nonsensical input.
