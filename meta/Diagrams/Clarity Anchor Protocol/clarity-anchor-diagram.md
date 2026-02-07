@@ -1,42 +1,35 @@
-```text
-Clarity Anchor Protocol — Plausible Hallucination Risk Diagram
+# Clarity Anchor Protocol — Plausible Hallucination Risk Diagram
 
-[User Input Step n]
+```text
+[Input Step n]
       |
       v
-+-----------------------------+
-| Ambiguity Detection         |
-| - Analyze for vague terms   |
-| - Multiple possible meanings|
-+-----------------------------+
++---------------------------+
+| Ambiguity Detection       | [-15% hallucination]
+| - Detect uncertain input  |
+| - Ask for clarification   |
++---------------------------+
       |
       v
-[Ambiguity Above Threshold?] ---> No ---> Proceed with response
-      |
-      Yes
-      v
-+-----------------------------+
-| Clarification Request       |
-| - Ask user to resolve       |
-| - Present structured options|
-+-----------------------------+
-      |
-      v
-[User Clarifies?] ---> Wait until resolved
+[Clarification Provided?] ---> No ---> Halt / Prompt user
       |
       Yes
       v
-+-----------------------------+
-| Response Generation         |
-| - Based on clarified input  |
-| - No assumptions made       |
-+-----------------------------+
++---------------------------+
+| Confirmed Context         |
+| - Update understanding    |
++---------------------------+
       |
       v
 [Output Step n+1]
+Reduced Plausible Hallucination: -15%
 
-Reduced Plausible Hallucination
-- Prevents unverified assumptions
-- Minimizes context smearing
-- Improves precision
-- Enhances user control
+Legend / Notes
+
+Ambiguity Detection: Identifies when input is unclear or has multiple meanings.
+
+Clarification Provided: Ensures that ambiguous input is clarified before proceeding.
+
+Confirmed Context: Updates the model’s understanding based on the clarified input.
+
+Effect: CAP forces ambiguity to surface before acting, ensuring that hallucinations don’t arise from unclear or uncertain input.
