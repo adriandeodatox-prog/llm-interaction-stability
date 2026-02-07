@@ -1,67 +1,69 @@
-Clarity Anchor Protocol — Human Cognitive Effects
-Purpose
+# Clarity Anchor Protocol — Human Cognitive Effects
 
-This annex describes observed and expected effects of CAP on human participants, particularly in tasks requiring precision, correctness, or interpretability.
+## Purpose
+This annex describes observed and expected effects of **CAP** on human participants, particularly in tasks requiring precision, correctness, or interpretability.
 
-1. Reduced Cognitive Guesswork
+---
 
-Humans are not required to anticipate how the model might interpret vague input.
-Clarification requests externalize uncertainty instead of hiding it.
+## 1. Reduced Cognitive Guesswork
 
-2. Increased Perceived Control
+- **Description**:  
+  Humans are not required to anticipate how the model might interpret vague input.  
+  Clarification requests externalize uncertainty instead of hiding it.
 
-By explicitly selecting or defining intent, users experience:
+---
 
-Greater agency over outcomes
+## 2. Increased Perceived Control
 
-Fewer surprises in model responses
+- **Description**:  
+  By explicitly selecting or defining intent, users experience:
+  - Greater agency over outcomes
+  - Fewer surprises in model responses
 
-3. Lower Error Correction Load
+---
 
-Upfront clarification reduces the need to:
+## 3. Lower Error Correction Load
 
-Correct misunderstandings
+- **Description**:  
+  Upfront clarification reduces the need to:
+  - Correct misunderstandings
+  - Backtrack across multiple turns
+  - Diagnose why an answer is "wrong but plausible"
 
-Backtrack across multiple turns
+---
 
-Diagnose why an answer is “wrong but plausible”
+## 4. Improved Trust in High-Stakes Contexts
 
-4. Improved Trust in High-Stakes Contexts
+- **Description**:  
+  In precision-sensitive scenarios, CAP shifts trust from:
+  - "The model probably guessed right"  
+  to:  
+  - "The model won’t proceed unless I’m clear"
 
-In precision-sensitive scenarios, CAP shifts trust from:
+---
 
-“The model probably guessed right”
+## 5. Acceptable Interaction Friction
 
-to:
+- **Description**:  
+  CAP introduces a deliberate pause in exchange flow.  
+  **Observed effects**:
+  - Slight increase in turn count
+  - Significant reduction in misalignment
+  - Higher satisfaction in safety-critical tasks
 
-“The model won’t proceed unless I’m clear”
+---
 
-5. Acceptable Interaction Friction
+## 6. Intentionality Awareness
 
-CAP introduces a deliberate pause in exchange flow.
+- **Description**:  
+  Repeated exposure to CAP encourages users to:
+  - Formulate clearer prompts
+  - Anticipate ambiguity in their own language
+  - Think explicitly about scope and intent
 
-Observed effects:
+---
 
-Slight increase in turn count
-
-Significant reduction in misalignment
-
-Higher satisfaction in safety-critical tasks
-
-6. Intentionality Awareness
-
-Repeated exposure to CAP encourages users to:
-
-Formulate clearer prompts
-
-Anticipate ambiguity in their own language
-
-Think explicitly about scope and intent
-
-Notes
-
-CAP trades fluency for clarity by design.
-
-Cognitive benefits increase with task complexity and risk.
-
-Effects are strongest when ambiguity carries real cost.
+## Notes
+- CAP trades **fluency** for **clarity** by design.
+- Cognitive benefits increase with **task complexity and risk**.
+- Effects are strongest when ambiguity carries **real cost**.
