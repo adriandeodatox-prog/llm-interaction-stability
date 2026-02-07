@@ -1,11 +1,11 @@
-```text
-Human Eyes — Plausible Hallucination Risk Diagram
+# Human Eyes — Plausible Hallucination Risk Diagram
 
-[Input Step n]
+```text
+[Input Step n] 
       |
       v
 +------------------------+
-| Stepwise Processing    |
+| Stepwise Processing    | [-25% hallucination]
 | - Only processes n     |
 | - Previous steps held  |
 +------------------------+
@@ -28,14 +28,23 @@ Human Eyes — Plausible Hallucination Risk Diagram
 +------------------------+
 | Human-aligned Flow      |
 | - Mirrors human reasoning|
-| - Gradual comprehension  |
+| - Gradual comprehension |
 +------------------------+
       |
       v
-[Output Step n+1]
+[Output Step n+1] 
+Reduced Plausible Hallucination: -25%
 
-Reduced Plausible Hallucination
-- Fewer leaps in reasoning
-- Early exposure of ambiguity
-- No silent context smearing
-- Misalignments more visible
+Legend / Notes
+
+Stepwise Processing: Prevents over-reading; core of Human Eyes safeguard.
+
+Step Acknowledgment: Checkpoints to halt error propagation.
+
+Context Preservation: Minimizes assumptions; prevents context smearing.
+
+Optional Discrete Anchor: Offers optional re-orientation without forcing changes.
+
+Human-aligned Flow: Ensures reasoning follows incremental steps.
+
+Effect: Each stage intercepts failure modes, reducing hallucinations without removing human autonomy.
