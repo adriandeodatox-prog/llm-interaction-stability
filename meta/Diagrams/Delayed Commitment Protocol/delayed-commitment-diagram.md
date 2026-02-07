@@ -1,4 +1,6 @@
+```text
 Delayed Commitment Protocol — Plausible Hallucination Risk Diagram
+
 [Exploratory Input Step n]
       |
       v
@@ -17,27 +19,18 @@ Delayed Commitment Protocol — Plausible Hallucination Risk Diagram
 +-----------------------------+
 | Commitment Mode Activated   |
 | - Conclusions allowed       |
-| - Synthesis and recommendations permitted |
-| - Ambiguity collapsed only if instructed   |
+| - Synthesis & recommendations permitted |
+| - Ambiguity collapsed only if instructed|
 +-----------------------------+
       |
       v
 [Output Step n+1]
-- Decision, synthesis, or recommendation released
-- Context and reasoning aligned with explicit human instruction
-      |
-      v
+
+Decision, synthesis, or recommendation released
+Context and reasoning aligned with explicit human instruction
+
 Reduced Plausible Hallucination
 - No premature closure
 - Exploratory errors exposed before commitment
 - Misalignments surfaced explicitly
 - Human retains control of when reasoning is finalized
-
-Legend / Notes
-Exploration Mode: core safeguard; prevents early assumptions from freezing thought.
-
-Human Commitment Signal: explicit opt-in from human triggers synthesis.
-
-Commitment Mode: allows controlled conclusions; nothing is forced automatically.
-
-Effect: DCP separates exploration from commitment, reducing confident-but-uncertain outputs and preserving user control.
