@@ -1,4 +1,6 @@
+```text
 Cold Context Protocol — Plausible Hallucination Risk Diagram
+
 [Input Step n]
       |
       v
@@ -32,20 +34,9 @@ Cold Context Protocol — Plausible Hallucination Risk Diagram
 +---------------------------+
 | Output Step n+1           |
 +---------------------------+
+
 Reduced Plausible Hallucination
 - No silent context smearing
 - Minimal assumptions
 - Ambiguity surfaced explicitly
 - Predictable reasoning within declared context
-
-Legend / Notes
-CCP Context Isolation: prevents implicit carryover, a key source of hallucination.
-
-Jar Activation Required: ensures nothing hidden contaminates reasoning.
-
-Deterministic Interaction: operations restricted to explicit input + activated jars.
-
-Optional Orientation: gently maintains usability without silently reintroducing context.
-
-Effect: CCP exposes or blocks hallucinations that rely on hidden continuity or inferred intent, without adding capability.
-
