@@ -1,57 +1,37 @@
 # Structural Re-Location — Plausible Hallucination Risk Diagram
 
-[Input / Evolving Conversation]
-          |
-          v
-+-------------------------------+
-| Identify Trunk                |
-| - Determine current main claim|
-+-------------------------------+
-          |
-          v
-+-------------------------------+
-| Surface Roots                 |
-| - Highlight active assumptions|
-+-------------------------------+
-          |
-          v
-+-------------------------------+
-| Trace Branches                |
-| - Map major implications      |
-+-------------------------------+
-          |
-          v
-+-------------------------------+
-| Mark Abandoned / Conflicting  |
-| Branches                      |
-| - Note diverged or collapsed  |
-+-------------------------------+
-          |
-          v
-[Optional Periodic Check-In?] ---> No ---> Continue interaction
-          |
-          Yes
-          v
-+-------------------------------+
-| Structural Snapshot Generated |
-| - Concise trunk + roots +     |
-|   branches + abandoned limbs  |
-+-------------------------------+
-          |
-          v
-[Output / Aligned Conversation]
-          |
-          v
-Reduced Plausible Hallucination
-- Conceptual drift visible
-- Explicit shared structure
-- Hidden assumptions surfaced
-- Misalignment reduced
+```text
+[Input Step n]
+      |
+      v
++---------------------------+
+| Tree Vision Mapping       | [-20% hallucination]
+| - Identify trunk, roots   |
+| - Trace branches          |
+| - Mark abandoned limbs    |
++---------------------------+
+      |
+      v
+[Participants Re-Located?] ---> No ---> Offer optional check-in
+      |
+      Yes
+      v
++---------------------------+
+| Shared Conceptual Snapshot|
+| - Explicitly aligned      |
+| - Drift surfaced          |
++---------------------------+
+      |
+      v
+[Output Step n+1]
+Reduced Plausible Hallucination: -20%
 
 Legend / Notes
-Identify Trunk: establishes current focus for alignment.
-Surface Roots: makes assumptions explicit for both human and model.
-Trace Branches: ensures major consequences are visible.
-Mark Abandoned / Conflicting Branches: prevents silent propagation of drift.
-Periodic Check-In: optional, non-coercive snapshot for long interactions.
-Effect: SRL forces explicit structural alignment, stabilizing reasoning and reducing hallucination.
+
+Tree Vision Mapping: Maps the conceptual structure, ensuring both participants are aligned.
+
+Participants Re-Located: Ensures both human and model share the same understanding.
+
+Shared Conceptual Snapshot: Explicitly surfaces assumptions, implications, and drift in the conversation.
+
+Effect: Structural Re-Location maintains a shared mental map, which reduces hallucinations caused by unrecognized divergence or shifting assumptions.
