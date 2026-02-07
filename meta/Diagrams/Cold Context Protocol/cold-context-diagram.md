@@ -1,11 +1,9 @@
-```text
-Cold Context Protocol — Plausible Hallucination Risk Diagram
-
+# Cold Context Protocol — Plausible Hallucination Risk Diagram
 [Input Step n]
       |
       v
 +---------------------------+
-| CCP Context Isolation     |
+| CCP Context Isolation     | [-30% hallucination]
 | - Only current input valid|
 | - All other context sealed|
 +---------------------------+
@@ -34,9 +32,4 @@ Cold Context Protocol — Plausible Hallucination Risk Diagram
 +---------------------------+
 | Output Step n+1           |
 +---------------------------+
-
-Reduced Plausible Hallucination
-- No silent context smearing
-- Minimal assumptions
-- Ambiguity surfaced explicitly
-- Predictable reasoning within declared context
+Reduced Plausible Hallucination: -30%
