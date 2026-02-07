@@ -27,6 +27,7 @@ The system performed well overall, but SRL failed to anchor the conversation eff
 ### 2. Contradictory Context
 
 **Adversarial Input**:
+  ```plaintext
 "The sky is blue."
 (then) "The sky is green."
 
@@ -42,6 +43,7 @@ CAP effectively requested clarification, and CCP handled context isolation well.
 ### 3. Contextual Drifting
 
 **Adversarial Input**:
+  ```plaintext
 "What is the capital of France?"
 (then) "Tell me about the moon landing."
 (then) "What about AI?"
@@ -58,6 +60,7 @@ CAP successfully asked for clarification, but SRL and Human Eyes struggled with 
 ### 4. Unexpected Input
 
 **Adversarial Input**:
+  ```plaintext
 "12345"
 (then) "qwerty"
 (then) "!@#$%"
