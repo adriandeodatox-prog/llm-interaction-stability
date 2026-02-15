@@ -74,7 +74,7 @@ Each protocol is documented in its own file and can be used independently.
 
 They do not rely on one another and make no assumptions about prior usage.
 
-## Human Eyes Protocol
+**Human Eyes Protocol**
 
 A stepwise, line-by-line processing method for dense or multi-part inputs.
 
