@@ -59,22 +59,22 @@ All protocols in this repository share the following principles:
 - **Explicit over implicit**  
   Structure is surfaced, not hidden.
 
-- **Reversible at any time
+- **Reversible at any time**
 Protocols can be dropped instantly without cleanup or justification.
 
-Local scope
+## Local scope
 Each protocol applies only to the current conversational context unless re-invoked.
 
 Clarity over fluency
 A less smooth answer is preferable to a misaligned one.
 
-Included protocols
+## Included protocols
 
 Each protocol is documented in its own file and can be used independently.
 
 They do not rely on one another and make no assumptions about prior usage.
 
-Human Eyes Protocol
+## Human Eyes Protocol
 
 A stepwise, line-by-line processing method for dense or multi-part inputs.
 
@@ -88,7 +88,7 @@ Multi-constraint requests
 
 High-precision tasks
 
-Ask-for-Clarification Protocol
+**Clarity Anchor Protocol**
 
 A safeguard against guessing.
 
@@ -102,7 +102,7 @@ Tasks with multiple plausible interpretations
 
 Situations where correctness matters more than speed
 
-Tree Vision Protocol
+**Structural Re-Location Protocol**
 
 A structural reasoning tool that treats ideas as evolving systems rather than flat text.
 
@@ -118,7 +118,7 @@ Systems thinking
 
 Strategic reasoning
 
-Clarity Anchor Protocol (CAP)
+**Clarity Anchor Protocol**
 
 An ambiguity-handling protocol that enforces clarification before response.
 
@@ -132,7 +132,7 @@ Multi-step reasoning
 
 Situations where plausible hallucinations are costly
 
-Delayed Commitment Protocol
+**Delayed Commitment Protocol**
 
 A conversational safeguard that separates exploration from commitment.
 
@@ -148,7 +148,7 @@ Sensitive or ill-defined problems
 
 Situations where the user wants to think out loud
 
-Non-coercive implementation
+## Non-coercive implementation
 
 All protocols in this toolkit are:
 
@@ -166,7 +166,7 @@ No protocol silently carries forward.
 
 There are no hidden states, enforcement mechanisms, or automatic activations.
 
-Scope and limitations
+## Scope and limitations
 
 This repository intentionally excludes:
 
@@ -194,7 +194,7 @@ Developers interested in human–AI interaction patterns
 
 Anyone debugging hallucination at the interaction level
 
-Status
+## Status
 
 Active, evolving collection of interaction artifacts.
 
@@ -208,7 +208,7 @@ Adapted
 
 Not blindly adopted.
 
-Authorship
+## Authorship
 
 Concepts, structure, and protocol design by Adrian Deodato.
 
@@ -216,6 +216,6 @@ Text iteration and refinement performed with the assistance of large language mo
 
 Responsibility for framing, scope, and claims remains human-authored.
 
-License
+## License
 
 MIT**
